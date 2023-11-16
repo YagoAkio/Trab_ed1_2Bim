@@ -5,21 +5,7 @@
 #include<stdlib.h>
 #include<math.h>
 #include<ctype.h>
-
-struct TpPontDP{
-	int Id,Prio;
-	TpPontDP *Prox,*Ant;
-};
-
-struct TpDesc{
-	TpPontDP *Inicio, *Fim;
-	int Qtde;
-};
-
-void Inicializar(TpDesc &Desc){
-	Desc.Inicio = Desc.Fim = NULL;
-	Desc.Qtde= 0;
-}
+#include"TAD.h"
 
 void Moldurar(int CI,int LI,int CF,int LF,int Cor)
 {
@@ -48,4 +34,8 @@ void Moldurar(int CI,int LI,int CF,int LF,int Cor)
 		gotoxy(CF,i);
 		printf("%c",186);
 	}
+}
+
+int main(void){
+	return 0;
 }
